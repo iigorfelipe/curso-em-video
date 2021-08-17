@@ -4,8 +4,8 @@
 
 }
 body{  
-    background-color: #040d21;
-    color: #627597;
+    background-color: #7c9cdfad;
+    color: #040d21;
     font-family: Arial, sans-serif;
 }
 
@@ -15,12 +15,12 @@ p{
 }
 
 a{
-    color:#606060;
+    color:#00a2ff;
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
-    color: blue;
+    color: #040d21;
 }
 header#cabecalho img#icone{
     position:absolute;
@@ -37,15 +37,15 @@ header#cabecalho {
 header#cabecalho h1{
     font-family: sans-serif;
     font-size: 32pt;
-    color: #eef0f3;
-    text-shadow: 1px 1px 1px #066d76(0,0,0,0);
+    color: #040d21;
+    text-shadow: 1px 1px 1px #000000(0,0,0,0);
     padding: 0px;
     margin-bottom: 0px;
 }
 
 header#cabecalho h2{
     font-family: Arial, sans-serif;
-    color: #eef0f3;
+    color: #040d21;
     font-size: 15pt; 
     padding: 0px;
     margin-top: 0px;
@@ -66,8 +66,8 @@ figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0px;
-    background-color: #051b43;
-    color: white;
+    background-color: #7c9cdfad;
+    color: #040d21;
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -90,14 +90,14 @@ nav#menu ul{
 
 nav#menu li{
     display: inline-block;
-    background-color: #051b43;
+    background-color: #7c9cdfad;
     padding:10px;
     margin: 2px;
     transition: background-color 0.50s;
 }
 
 nav#menu li:hover{
-    background-color: #051b43;
+    background-color: #ffffff;
 }
 
 nav#menu {
@@ -109,18 +109,18 @@ nav#menu h1{
 }
 
 nav#menu a{
-    color:#00cfc8;
+    color:#040d21;
     text-decoration: none;
 }
 
 nav#menu a:hover{
-    color: #0702ff;
+    color: #49d6d6;
     text-decoration: underline;
 }
 
 div#interface{
     width:1100px;
-    background: #0c162d;
+    background: #ffffff;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     padding: 10px;
@@ -130,7 +130,7 @@ section#corpo{
     display: block;
     width: 550px;
     float: left;
-    border-right: 1px  solid #00cfc8;
+    border-right: 1px  solid #000000;
     padding-right: 20px;
 }   
 
@@ -139,7 +139,7 @@ section#corpo{
 header#cabecalho-article h1{
     font-family: sans-serif;
     font-size: 20pt;
-    color: #00cfc8;
+    color: #040d21;
     margin-top: 0px;
 }
 
@@ -149,35 +149,35 @@ header#cabecalho-article h1{
 
 header#cabecalho-article h2{
     font-size: 12pt;
-    color:#00cfc8;
-    background-color: #051b43;
+    color:#040d21;
+    background-color: #7c9cdfad;
     margin-bottom: 0px;
 }
 
 header#cabecalho-article h3{
     font-size: 12pt;
-    color:#00cfc8;
+    color:#040d21;
     margin-top: 0;
 }
 
 article#noticiatop h2{
     font-size:12pt;
-    color:#00cfc8;
-    background-color: #051b43;
+    color:#040d21;
+    background-color: #7c9cdfad;
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
 
  /*TABELA*/
 table#tabelaspec{
-    border: 1px solid #00cfc8; 
+    border: 1px solid #000000; 
     border-spacing:0px;
     margin-left: auto;
     margin-right: auto;
 }
 
 table#tabelaspec caption{
-    color: #888888;
+    color: #040d21;
     font-size: 13pt;
     font-weight: bolder;
 }
@@ -191,20 +191,20 @@ table#tabelaspec caption span{
 
 }
 table#tabelaspec td{
-    border: 1px solid #00cfc8;
+    border: 1px solid #000000;
     padding: 10px;
     vertical-align: top;
 }
 
 table#tabelaspec td.ce {
     text-align: right;
-    color:white;
-    background-color: #051b43;
+    color:#040d21;
+    background-color: #7c9cdfad;
     font-weight: bolder;
 }
 table#tabelaspec td.cd {
     text-align: left;
-    background-color: #051b43;
+    background-color: #7c9cdfad;
 }
 
 
@@ -213,7 +213,7 @@ aside#lateral{
     display: block;
     width: 500px;
     float: right; 
-    background-color: #051b43;
+    background-color: #7c9cdfad;
     padding: 12px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -221,20 +221,20 @@ aside#lateral{
 aside#lateral h1{
     font-family: sans-serif;
     font-size: 20pt;
-    color:#00cfc8;
+    color:#040d21;
 }
 
 aside#lateral h2{
-    background-color: #051b43;
+    background-color: #7c9cdfad;
     font-size: 12pt;
-    color: #00cfc8;
+    color: #040d21;
     padding: 5px;
 }
 
 footer#rodape{
     text-align: center;
     clear: both;
-    border-top: 1px solid #00cfc8;
+    border-top: 1px solid #000000;
     padding-top: 20px;
 }
 footer#rodape p{
