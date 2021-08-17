@@ -1,0 +1,39 @@
+<!--8) Desenvolva um programa que leia uma distância em metros
+e mostre os valores relativos em outras medidas.-->
+
+<html>
+
+<head>
+    <script>
+
+        function converter() {
+            var m = Number(document.getElementById('m').value);
+            document.getElementById('km').value = `${m / 1000}Km`
+            document.getElementById('hm').value = `${m / 100}Hm`
+            document.getElementById('dam').value = `${m / 10}Dam`
+            document.getElementById('dm').value = `${m * 10}dm`
+            document.getElementById('cm').value = `${m * 100}cm`
+            document.getElementById('mm').value = `${m * 1000}mm`
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Variações de medidas</h1>
+
+        Digite um valor em metros:
+        <input type='number' id='m' min='0' oninput='converter()' size="100" /></p>
+
+        Kilimetro: <input type="text" id='km' readonly /></p>
+        Hectômetro: <input type="text" id='hm' readonly /></p>
+        Decâmetro: <input type="text" id='dam' readonly /></p>
+        Decímetro: <input type="text" id='dm' readonly /></p>
+        Centímetro: <input type="text" id='cm' readonly /></p>
+        Milímitro: <input type="text" id='mm' readonly /></p>
+
+</body>
+
+</html>

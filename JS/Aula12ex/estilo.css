@@ -1,0 +1,22 @@
+body{
+    font: normal 16pt Arial;
+    background: rgba(0, 0, 0, 0.712);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+div{
+    padding: 5px;
+    background: rgba(0, 252, 155, 0.534);
+    
+}
+input#mais1{
+    width: 30pt;
+}
+input#operacao{
+    width: 10pt;
+}
+input#mais2{
+    width: 30pt;
+}

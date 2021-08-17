@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang='pt-br'>
+        <title>Google Glass</title>
+        <link rel="stylesheet" href="../site/stysite.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+
+    <script src="../site/srcsite.js"></script>
+
+    <body> 
+        <div id='interface'>       
+            <header id='cabecalho'>
+                <hgroup id='p1'>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                    <img id='icone'src='../site/mult'>
+                    <nav id='menu'>
+                        <h1>Menu Principal</h1> 
+                        <ul type='disc'>
+                            <li onmousemove="imgnav('../site/home')" onmouseout="imgnav('../site/mult')"><a href='../site/site.html'>Home</a></li> 
+                            <li onmousemove="imgnav('../site/spec')" onmouseout="imgnav('../site/mult')"><a href='../links/specs.html'>Especificações</a></li> 
+                            <li onmousemove="imgnav('../site/foto')" onmouseout="imgnav('../site/mult')"><a href='../links/fotos.html'>Fotos</a></li>  
+                            <li onmousemove="imgnav('../site/mult')" onmouseout="imgnav('../site/mult')"><a href='../links/multimidia.html'>Multimídia</a></li> 
+                            <li onmousemove="imgnav('../site/cont')" onmouseout="imgnav('../site/mult')"><a href='../links/contato.html'>Fale conosco</a></li>      
+                        </ul>     
+                    </nav>              
+            </header>
+
+            <section id='corpospec'>
+                <article id='noticiatop'>
+                    <header id='cabecalho-article'>
+                        <h2>Glass > Multimídia</h2>
+                        <h1>Sons e Vídeos</h1> 
+                        <h2>por Gustavo Guanabara</h2> 
+                        <h3 class='direita'>Atualizado em 01/Maio/2013</h3>
+                    </header>
+
+                   <div id='tv-radio'>
+                        <audio id='musica' controls>
+                            <source src='../_media/2009-lovers-carvings-bibio.mp3' type='audio/mpeg'/>
+                            Desculpe, mas não foi possível carregar o áudio.
+                        </audio>
+                        <video id='filme'controls poster="../_imagens/video-mini03.jpg">
+                            <source src='../_media/getting-started.mp4' type='video/mp4'/>          
+                            Desculpe, mas não foi possível carregar o vídeo.
+                            <p></p>
+                        </video>
+                   </div>
+                </article>
+            </section>
+
+            <footer id='rodape'>
+                &copy;<b><em>Copyright 2013 - by Gustavo Guanabara</em></b>
+                <p><a href="https://pt-br.facebook.com/CursosEmVideo/" target='_blank'>Facebook</a> | <a href='https://twitter.com/cursosemvideo' target='_blank'>Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

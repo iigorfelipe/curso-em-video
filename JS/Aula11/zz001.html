@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 12pt Arial;
+            background: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descobrindo a nacionalidade</h1>
+    Digite o nome do país em que você nasceu:<input id="país">
+    <input type="button" value="Descobrir" onclick="calcular()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function calcular() {
+            var país = window.document.querySelector("input#país")
+            var resultado = window.document.querySelector('div#resultado')
+            var nacionalidade = (país.value)
+            país.value == "Brasil" ? resultado.innerHTML = "<p>Brasileiro!</p>" : resultado.innerHTML = "<p>Estrangeiro!</p>"
+            resultado.innerHTML += `<p>kkkkkkkkk<strong>${país.value}</strong>:</p>`
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang='pt-br'>
+        <title>Google Glass</title>
+        <link rel="stylesheet" href="../site/stysite.css">
+        <script src="../site/srcsite.js"></script>
+        <script src="form.js"></script>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    
+    <body> 
+        <div id='interface'>       
+            <header id='cabecalho'>
+                <hgroup id='p1'>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                    <img id='icone'src='../site/cont'>
+                    <nav id='menu'>
+                        <h1>Menu Principal</h1> 
+                        <ul type='disc'>
+                            <li onmousemove="imgnav('../site/home')" onmouseout="imgnav('../site/cont')"><a href='../site/site.html'>Home</a></li> 
+                            <li onmousemove="imgnav('../site/spec')" onmouseout="imgnav('../site/cont')"><a href='../links/specs.html'>Especificações</a></li> 
+                            <li onmousemove="imgnav('../site/foto')" onmouseout="imgnav('../site/cont')"><a href='../links/fotos.html'>Fotos</a></li>  
+                            <li onmousemove="imgnav('../site/mult')" onmouseout="imgnav('../site/cont')"><a href='../links/multimidia.html'>Multimídia</a></li> 
+                            <li onmousemove="imgnav('../site/cont')" onmouseout="imgnav('../site/cont')"><a href='../links/contato.html'>Fale conosco</a></li>      
+                        </ul>     
+                    </nav>              
+            </header>
+           
+            <form method='post' id='fContato' action='mailto:contato@gmail.com' oninput='calc_total()'>
+                <fieldset id='usuario'>
+                    <legend>Identificação do Usuário</legend></p>
+                    <label for="nome">Nome:</label><input type='text' id='nome' size='20' maxlength='35' placeholder='Nome Completo'/></p>
+                    <label for="senha">Senha:</label><input type="password" id='senha' size='4' maxlength='8' placeholder='8 Digitos'/></p>
+                    <label for="email">E-mail:</label><input type='email' id='email'></p>
+                    <fieldset id='sexo'>
+                        <legend>Sexo:</legend></p>
+                        <input type="radio" name='sexo' id='m'><label for='m'>Masculino</label>
+                        <input type="radio" name='sexo' id='f'><label for='f'>Feminino</label></p>
+                    </fieldset>                                   
+                        <legend>Data de Nascimento:</legend></p>
+                        <input type="date" id='nascimento'>   
+                </fieldset>
+
+                <fieldset id='endereco'>
+                    <legend>Endereço do Usuário</legend></p>
+                    <label for="rua">Logradouro:</label><input type="text" placeholder='Rua, Av, Trav, ...'id='rua'></p>
+                    <label for="numero-rua">Número:</label><input type='number' min='0' max='9999' id='numero-rua'>
+                    <label for="complemento">Complemento:</label><input type='text' id='complemento'></p>
+                    <label for="estado">Estado:</label>
+                    <select id='estado'>
+                        <option value='RJ'>Rio de Janeiro</option>
+                        <option value='SP' selected>São Paulo</option>
+                        <option value='AM' >Amazonas</option>
+                        <option value='PR' >Pará</option>
+                        <option value='BA' >Bahia</option>
+                        <option value='RN' >Rio Grande do Norte</option>
+                    </select>
+                    </p>
+                    <label for="cidade">Cidade:</label><input type='text' list='cidades' id='cidade'></p>
+                    <datalist id='cidades'>
+                        <option value='Rio de Janeiro'>
+                            <option value='Nova Iguaçu'></option>
+                            <option value='Niterói'></option>
+                            <option value='Belford Roxo'> </option>
+                        </option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset id='msg'>
+                    <legend>Mensagem do Usuário</legend></p>
+                    <label for="urgencia">Grau de Urgência: Min</label><input type='range'min='0' max='10' id='urgencia'>Max</p>
+                    <label for="msg">Mensagem:</label><textarea placeholder='Deixe aqui sua mensagem' cols='40' rows='5' id='msg'></textarea></p>
+                </fieldset>
+                      
+                <fieldset id='compra'>
+                    <legend>Quero um Google Glass</legend></p>
+                   <input type="checkbox" checked id='getGlass'/><label for='getGlass'></label> Gostaria de adquirir um Google Glass quando disponível: </p>
+                    <label for="cor">Cor:</label><input type="color" value='#a1cec5' id='cor'> </p>
+                    <label for="quantidade">Quantidade:</label><input type='number' min='0' max='5' value='0' id='quantidade'/></p>
+                    <label for="preco">Preço Total: R$</label><input type='text' placeholder='Total a pagar' readonly id='preco'></p>
+                </fieldset>
+
+                <fieldset id='botao'>
+                    <input type='image' src='../_imagens/botao-enviar.png' id='enviar'/>
+                </fieldset>
+                    
+            </form>
+
+            <footer id='rodape'>
+                &copy;<b><em>Copyright 2013 - by Gustavo Guanabara</em></b>
+                <p><a href="https://pt-br.facebook.com/CursosEmVideo/" target='_blank'>Facebook</a> | <a href='https://twitter.com/cursosemvideo' target='_blank'>Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
